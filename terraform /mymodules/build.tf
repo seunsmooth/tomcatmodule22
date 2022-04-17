@@ -8,5 +8,5 @@ resource "aws_instance" "machine" {
 
   tags = {
     "Name" = "var.scripts[count.index]"
-  }
+    "Environment" = "dev"
 }
